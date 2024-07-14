@@ -3,6 +3,7 @@
 
 :root{
     --main-color : #20c997;
+    --second-color:#f8f9fa;
 }
 
 /* End Global Variables */
@@ -30,7 +31,7 @@
     position: absolute;
     top: 80%;
     left: 46.7%;
-    height: 2px;
+    height: 3px;
     width: 88px;
     background: var(--main-color);  
 }
@@ -184,6 +185,27 @@ header *{
     color: gray;
 }
 
-
-
 /* End About */
+
+/* Start Services */
+
+.services{
+    background-color: var(--second-color);
+}
+
+.srv .icon{
+    background-color: white;
+    padding: 18px;
+    border-radius: 4px;
+}
+
+.srv .icon i{
+    color: var(--main-color);
+}
+
+
+.srv .description{
+    line-height: 1.8;
+}
+
+/* End Services */
