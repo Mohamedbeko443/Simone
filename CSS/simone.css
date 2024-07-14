@@ -7,6 +7,35 @@
 
 /* End Global Variables */
 
+
+/* Start Components */
+.special-heading{
+    position: relative;
+}
+
+.special-heading h1{
+
+    color: #ebeced;
+    font-size: 130px;
+}
+
+.special-heading p{
+    font-size: 40px;
+    margin: -100px 0 0 ;
+}
+
+
+.special-heading::before{
+    content: "";
+    position: absolute;
+    top: 80%;
+    left: 46.7%;
+    height: 2px;
+    width: 88px;
+    background: var(--main-color);  
+}
+/* End Components */
+
 /* Start Header */
 
 
@@ -33,12 +62,10 @@ ul li a {
     font-weight: 600;
 }
 
-ul li  .first{
+ul li  .first,
+ul li :hover
+{
     color: var(--main-color);
-}
-
-ul li :hover{
-    color: #20c997;
 }
 
 
@@ -104,3 +131,59 @@ header *{
 }
 
 /* End Header */
+
+/* Start About */
+
+
+.txt span{
+    color: var(--main-color);
+}
+
+
+.txt p{
+    line-height: 2;
+    font-size: 17px;
+}
+
+.info .s{
+    color: var(--main-color);
+}
+
+
+.info .second
+{
+    border-bottom: solid #ebeced 2px;
+    border-top: solid #ebeced 2px;
+}
+
+.info .third{
+    border-bottom: solid #ebeced 2px;
+}
+
+.info button{
+    padding: 13px 42px;
+    font-weight: 600;
+    border-width: 2px;
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+    color: white;
+    transition: 300ms;
+}
+
+.info button:hover{
+    padding: 13px 42px;
+    font-weight: 600;
+    border-width: 2px;
+    background-color:#13ac7f;
+    border-color:#13ac7f;
+    color: white;
+}
+
+
+.stat h1{
+    color: gray;
+}
+
+
+
+/* End About */
