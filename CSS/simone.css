@@ -209,3 +209,59 @@ header *{
 }
 
 /* End Services */
+
+/* Start Resume */
+
+
+.container .title{
+    margin-right: 240px;
+}
+
+.box{
+    border-radius: 7px;
+}
+
+.box .first{
+    color: white;
+    background-color: var(--main-color);
+    padding-inline: 11px;
+    padding-block: 3px;
+    display: inline-block;
+    border-radius: 7px;
+}
+
+.box span{
+    color:rgb(225, 22, 22) ;
+}
+
+.progress{
+    height: 8px;
+}
+
+.des p {
+    font-weight: 600;
+}
+
+
+.progress-bar{
+    background-color: var(--main-color);
+}
+
+
+
+.cvbtn button{
+    padding: 13px 42px;
+    font-weight: 600;
+    border-width: 2px;
+    background-color: white;
+    border-color: gray;
+    color: gray;
+    transition: 300ms;
+}
+
+.cvbtn button:hover{
+    color: white;
+    background-color: gray;
+}
+
+/* End Resume */
