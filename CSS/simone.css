@@ -185,6 +185,35 @@ header *{
     color: gray;
 }
 
+
+
+
+
+
+.rr{
+    border-right: gray 1px dotted;
+}
+
+.rl{
+    border-right: gray 1px dotted;
+}
+.rd{
+    border-right: gray 1px dotted;
+}
+
+@media (width<770px) {
+    .container  .rr{
+        border-bottom: gray 1px dotted;
+        border-right: 0;
+    }
+
+    .container .rl{
+        border-top: gray 1px dotted;
+        border-right: gray 1px dotted;
+    }
+}
+
+
 /* End About */
 
 /* Start Services */
@@ -212,10 +241,6 @@ header *{
 
 /* Start Resume */
 
-
-.container .title{
-    margin-right: 240px;
-}
 
 .box{
     border-radius: 7px;
@@ -265,3 +290,114 @@ header *{
 }
 
 /* End Resume */
+
+
+/* Start Client */
+
+
+
+.client .profile img{
+    border-radius: 50%;
+}
+
+.profile .title p{
+    color: gray;
+}
+
+.client .client1{
+    background-color: var(--second-color);
+}
+
+.des .star i{
+    color: gold;
+}
+
+.client1 .des p {
+    line-height:1.7;
+}
+
+/* End Client */
+
+/* Start Contact */
+
+.contact{
+    background-color: var(--second-color);
+}
+p i {
+    color: var(--main-color);
+}
+
+.social .media i{
+    color: rgb(105, 105, 105);
+    cursor: pointer;
+    font-size: 20px;
+    transition: 300ms;
+}
+
+.social .media .twitter:hover{
+    color: rgb(29, 161, 242);
+}
+
+.social .media  .face:hover{
+    color: rgb(24, 119, 242);
+}
+
+.social .media  .basket:hover{
+    color:rgb(234, 76, 137);
+}
+
+.social .media  .google:hover{
+    color:red;
+}
+.social .media  .github:hover{
+    color:black;
+}
+
+
+.contactbtn button{
+    padding: 13px 42px;
+    font-weight: 600;
+    border-width: 2px;
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+    color: white;
+    transition: 300ms;
+}
+
+.contactbtn button:hover{
+    padding: 13px 42px;
+    font-weight: 600;
+    border-width: 2px;
+    background-color:#13ac7f;
+    border-color:#13ac7f;
+    color: white;
+}
+
+/* End Contact */
+
+/* Start Footer */
+
+.footer p .clr{
+    color: var(--main-color);
+}
+
+
+
+.footer p  .first ,
+.footer p  .sec{
+    cursor: pointer;
+    transition: 300ms;
+} 
+
+.footer p  .first:hover ,
+.footer p  .sec:hover{
+    color: var(--main-color);
+} 
+
+@media (width<760px) {
+    .footer{
+        flex-direction: column;
+    }
+}
+
+/* End Footer */
