@@ -90,6 +90,11 @@ ul li :hover
     color:rgb(234, 76, 137);
 }
 
+.navbar{
+    /* background-color: black; */
+    /* background-color: transparent; */
+}
+
 header .content{
     display: flex;
     flex-direction: column;
@@ -130,6 +135,16 @@ header::before{
 header *{
     z-index: 999;
 }
+
+
+@media (width<860px) {
+    .navbar nav{
+        display: none;
+    }
+}
+
+
+
 
 /* End Header */
 
@@ -292,6 +307,47 @@ header *{
 /* End Resume */
 
 
+/* Start Portfolio */
+
+.portfolio{
+    background-color: var(--second-color);
+}
+
+
+.portfolio nav  ul li {
+    text-decoration: none;
+    padding-top: 15px;
+}
+
+
+.portfolio nav  ul li a {
+    text-decoration: none;
+    padding: 10px;
+    transition: 300ms;
+    font-size: 16px;
+    color: gray;
+    font-weight: 600;
+}
+
+.portfolio nav ul li  .first,
+.portfolio nav ul li :hover
+{
+    color: var(--main-color);
+}
+
+.portfolio nav ul li  .first{
+    border-bottom: solid 2px var(--main-color);
+}
+
+
+.image1 img {
+    width: 100%;
+    cursor: pointer;
+}
+
+/* End Portfolio */
+
+
 /* Start Client */
 
 
@@ -401,3 +457,4 @@ p i {
 }
 
 /* End Footer */
+
